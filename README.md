@@ -1,12 +1,14 @@
 # Porntrex Resume
 
+**Português (Brasil)** · [English](README.en.md)
+
 Continue a navegação pelos vídeos de cada perfil de onde parou.
 
 O Porntrex costuma trocar as páginas da lista sem mudar o endereço. Este userscript guarda a posição de cada perfil, coloca a paginação na URL e retoma a posição salva quando você volta. Tudo funciona em segundo plano, sem painel ou texto sobre a página.
 
 ## Instalar
 
-1. Instale um gerenciador de userscripts no navegador. A combinação validada em uso é **Firefox + Greasemonkey**.
+1. Instale ou habilite um gerenciador de userscripts compatível com a API moderna `GM` no navegador.
 2. Clique em **[Instalar o script](https://raw.githubusercontent.com/adestrador/porntrex-resume/main/porntrex-resume.user.js)**.
 3. Confirme a instalação no gerenciador e recarregue uma lista de vídeos de perfil.
 
@@ -32,9 +34,11 @@ Para conferir a instalação, avance algumas páginas, consulte a posição no m
 
 ## Compatibilidade
 
-- **Firefox + Greasemonkey:** validado em uso.
-- O código usa APIs modernas de userscripts, também disponíveis em outros gerenciadores. Tampermonkey e Violentmonkey ainda precisam de validação no site; relatos de compatibilidade são bem-vindos.
-- Atua somente em listas no formato `/members/ID/videos/` nos domínios `porntrex.com` e `www.porntrex.com`.
+**Funciona em qualquer gerenciador de userscripts que ofereça as APIs modernas de armazenamento e comandos de menu.**
+
+O gerenciador precisa disponibilizar `GM.getValue`, `GM.setValue` e `GM.registerMenuCommand`. Essas são as interfaces usadas pelo script; não há dependência de uma marca específica de extensão.
+
+Atua em listas no formato `/members/ID/videos/` nos domínios `porntrex.com` e `www.porntrex.com`.
 
 ## Dados e privacidade
 
