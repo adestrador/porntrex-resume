@@ -1,0 +1,14 @@
+{
+  "name": "porntrex-resume",
+  "version": "1.4.1",
+  "private": true,
+  "description": "Userscript para retomar a paginação de vídeos por perfil.",
+  "license": "MIT",
+  "scripts": {
+    "check": "node --check porntrex-resume.user.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
